@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InnovaTek Soluciones Tecnológicas</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#f4f7fb;
+    color:#333;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#5792c5;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+header img{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:white;
+    padding:10px;
+    margin-bottom:10px;
+
+}
+
+
+
+/* ================= MENU ================= */
+
+nav{
+
+    background:#06335d;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+nav ul{
+
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+
+nav ul li{
+
+    margin:10px 20px;
+
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+
+nav ul li a:hover{
+
+    color:#35d0ff;
+
+}
+
+
+
+/* ================= BANNER ================= */
+
+
+.banner{
+
+    background:
+    linear-gradient(
+        rgba(149,191,227,0.8),
+        rgba(6,51,93,0.8)
+    ),
+    url("img/banner.jpg") center/cover;
+
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+
+}
+
+
+.banner h2{
+
+    font-size:40px;
+    margin-bottom:15px;
+
+}
+
+
+.banner p{
+
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+
+}
+
+
+
+/* ================= SECCIONES ================= */
+
+
+section{
+
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+
+}
+
+
+section h2{
+
+    color:#0b4f8a;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:32px;
+
+}
+
+
+section p{
+
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:15px;
+
+}
+
+
+
+/* ================= CONTENIDO IMAGEN TEXTO ================= */
+
+
+.contenido{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.contenido img{
+
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+
+
+.contenido div{
+
+    flex:1;
+    min-width:300px;
+
+}
+
+
+
+
+/* ================= CARDS ================= */
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    text-align:center;
+
+}
+
+
+.card h3{
+
+    color:#1d4ed8;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    text-align:center;
+
+}
+
+
+
+/* ==================================================
+                PORTAFOLIO NUEVO
+================================================== */
+
+
+.portafolio{
+
+    padding:60px 10%;
+    background:#f5f5f5;
+    text-align:center;
+
+}
+
+
+
+.portafolio h2{
+
+    font-size:35px;
+    color:#333;
+
+}
+
+
+
+.descripcion-portafolio{
+
+    max-width:800px;
+    margin:20px auto 40px;
+    color:#666;
+    font-size:18px;
+
+}
+
+
+
+.contenedor-proyectos{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+
+
+.proyecto{
+
+    background:white;
+    width:380px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+.proyecto img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+
+
+.contenido-proyecto{
+
+    padding:25px;
+    text-align:left;
+
+}
+
+
+
+.contenido-proyecto h3{
+
+    color:#1d4ed8;
+    font-size:22px;
+
+}
+
+
+
+.contenido-proyecto h4{
+
+    margin-top:20px;
+    color:#333;
+
+}
+
+
+
+.contenido-proyecto p{
+
+    color:#555;
+    line-height:1.5;
+
+}
+
+
+
+.tecnologias span{
+
+    display:inline-block;
+    background:#e0e7ff;
+    color:#1e40af;
+
+    padding:7px 12px;
+    border-radius:20px;
+
+    margin:5px;
+    font-size:14px;
+
+}
+
+
+
+.contenido-proyecto ul{
+
+    padding-left:20px;
+    color:#555;
+
+}
+
+
+
+.datos-proyecto{
+
+    border-top:1px solid #ddd;
+    margin-top:20px;
+    padding-top:15px;
+
+}
+
+
+
+.btn-proyecto{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#1d4ed8;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+}
+
+
+
+.btn-proyecto:hover{
+
+    background:#163ea8;
+
+}
+
+
+
+/* ================= REDES ================= */
+
+
+.redes{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.redes a{
+
+    background:#06335d;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+
+}
+
+
+
+.redes a:hover{
+
+    background:#0b4f8a;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    background:#06335d;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header id="inicio">
+
+
+<img src="LOGO.jpeg" alt="Logo InnovaTek">
+
+
+<h1>
+InnovaTek Soluciones Tecnológicas
+</h1>
+
+
+<p>
+Tecnología a la medida, soluciones que transforman.
+</p>
+
+
+</header>
+
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#inicio">Inicio</a>
+</li>
+
+
+<li>
+<a href="#mision">Misión</a>
+</li>
+
+
+<li>
+<a href="#vision">Visión</a>
+</li>
+
+
+<li>
+<a href="#portafolio">Portafolio</a>
+</li>
+
+
+<li>
+<a href="#contacto">Contacto</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+
+
+<section class="banner">
+
+
+<h2>
+Soluciones Digitales para el Crecimiento de tu Empresa
+</h2>
+
+
+<p>
+
+Desarrollamos software a la medida, automatizamos procesos y creamos
+herramientas tecnológicas que ayudan a las empresas a ser más eficientes,
+competitivas e innovadoras.
+
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+
+<h2>
+¿Quiénes Somos?
+</h2>
+
+
+
+<div class="contenido">
+
+
+<img src="quien.png" alt="InnovaTek">
+
+
+<div>
+
+
+<p>
+
+InnovaTek Soluciones Tecnológicas nace a partir de la necesidad de
+ofrecer soluciones digitales accesibles, funcionales y adaptadas a las
+necesidades de pequeñas y medianas empresas.
+
+</p>
+
+
+<p>
+
+Nuestro objetivo es acercar la tecnología a la comunidad mediante el
+desarrollo de software personalizado, automatización de procesos y
+soluciones en la nube, brindando siempre un acompañamiento cercano
+y un servicio de calidad.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ================= MISION ================= -->
+
+<section id="mision">
+
+
+<h2>
+Nuestra Misión
+</h2>
+
+
+<div class="contenido">
+
+
+<img src="mision.png" alt="Misión">
+
+
+
+<div>
+
+
+<p>
+
+En <strong>InnovaTek Soluciones Tecnológicas</strong> desarrollamos soluciones
+tecnológicas innovadoras que impulsan el crecimiento de nuestros clientes,
+combinando calidad, innovación y compromiso para transformar sus procesos
+mediante software, automatización y herramientas digitales.
+
+</p>
+
+
+
+<p>
+
+Nuestro principal objetivo es ofrecer soluciones accesibles y personalizadas
+para pequeñas y medianas empresas, ayudándolas a competir en un entorno
+cada vez más digital.
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= VISION ================= -->
+
+
+<section id="vision">
+
+
+<h2>
+Nuestra Visión
+</h2>
+
+
+
+<div class="contenido">
+
+
+<div>
+
+
+<p>
+
+Aspiramos a convertirnos en una empresa líder en el desarrollo de soluciones
+digitales durante los próximos cinco años, siendo reconocidos por la innovación,
+la calidad de nuestros servicios y el compromiso con nuestros clientes.
+
+</p>
+
+
+
+<p>
+
+Buscamos contribuir al crecimiento tecnológico de empresas y organizaciones,
+impulsando la transformación digital mediante herramientas modernas y seguras.
+
+</p>
+
+
+</div>
+
+
+
+<img src="vision.jpeg" alt="Visión">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= OBJETIVOS ================= -->
+
+
+<section id="objetivos">
+
+
+<h2>
+Objetivos
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>
+💻 Desarrollo de Software
+</h3>
+
+
+
+<p>
+
+Crear aplicaciones web y de escritorio adaptadas a las necesidades
+de cada cliente.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+⚙ Automatización
+</h3>
+
+
+
+<p>
+
+Automatizar procesos administrativos para reducir tiempos,
+errores y costos operativos.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+☁ Soluciones en la Nube
+</h3>
+
+
+
+<p>
+
+Implementar servicios en la nube que garanticen seguridad,
+disponibilidad y acceso a la información.
+
+</p>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= SERVICIOS ================= -->
+
+
+<section id="servicios">
+
+
+<h2>
+Servicios
+</h2>
+
+
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+🌐 Desarrollo Web
+</h3>
+
+
+
+<p>
+
+Diseño y desarrollo de páginas web modernas, responsivas
+y adaptadas a cada negocio.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+📱 Aplicaciones
+</h3>
+
+
+
+<p>
+
+Desarrollo de aplicaciones de escritorio y móviles para
+optimizar procesos empresariales.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+🛠 Soporte Técnico
+</h3>
+
+
+
+<p>
+
+Asesoría, mantenimiento y soporte continuo para garantizar
+el correcto funcionamiento de cada solución tecnológica.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+📊 Consultoría
+</h3>
+
+
+
+<p>
+
+Análisis de procesos empresariales para implementar
+soluciones tecnológicas eficientes.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= PORTAFOLIO ================= -->
+
+
+<section id="portafolio" class="portafolio">
+
+
+
+<h2>
+Nuestros Proyectos
+</h2>
+
+
+
+
+<p class="descripcion-portafolio">
+
+
+Conoce algunos de los proyectos desarrollados por 
+<b>InnovaTek Soluciones Tecnológicas</b>, enfocados en la 
+automatización de procesos y creación de soluciones digitales eficientes.
+
+
+</p>
+
+
+
+
+
+
+<div class="contenedor-proyectos">
+
+
+
+
+
+<!-- PROYECTO SECA -->
+
+
+<div class="proyecto">
+
+
+
+
+
+<img src="calif.jpeg"
+alt="Sistema de Evaluación de Calificaciones Automatizado">
+
+
+
+
+
+<div class="contenido-proyecto">
+
+
+
+
+
+<h3>
+
+SECA - Sistema de Evaluación de Calificaciones Automatizado
+
+</h3>
+
+
+
+
+
+<p>
+
+Sistema desarrollado para automatizar la evaluación de 
+exámenes, permitiendo calcular resultados de manera rápida 
+y precisa, reduciendo el trabajo manual y facilitando la 
+entrega de calificaciones.
+
+</p>
+
+
+
+
+
+
+<h4>
+Tecnologías utilizadas
+</h4>
+
+
+
+
+
+
+<div class="tecnologias">
+
+
+<span>
+Google Forms
+</span>
+
+
+<span>
+Google Sheets
+</span>
+
+
+<span>
+Google Apps Script
+</span>
+
+
+<span>
+Automatización
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+<h4>
+Características principales
+</h4>
+
+
+
+
+
+
+<ul>
+
+
+<li>
+✔ Evaluación automática de respuestas
+</li>
+
+
+<li>
+✔ Cálculo de aciertos y desaciertos
+</li>
+
+
+<li>
+✔ Generación de calificación final
+</li>
+
+
+<li>
+✔ Envío automático de resultados por correo
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+<div class="datos-proyecto">
+
+
+
+<p>
+<b>Estado:</b> Finalizado
+</p>
+
+
+
+<p>
+<b>Metodología:</b> Cascada
+</p>
+
+
+
+<p>
+<b>Año:</b> 2026
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<a href="SECA.pdf" class="btn-proyecto" target="_blank">
+  Ver proyecto
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+<!-- ================= CONTACTO ================= -->
+
+
+<section id="contacto">
+
+
+<h2>
+Contáctanos
+</h2>
+
+
+
+
+<p>
+
+¿Tienes un proyecto o necesitas una solución tecnológica?
+Estamos listos para ayudarte.
+
+</p>
+
+
+
+
+<br>
+
+
+
+
+<h3>
+Información de contacto
+</h3>
+
+
+
+
+<p>
+📞 Teléfono: +52 762-116-7586
+</p>
+
+
+
+<p>
+📧 Correo: innovatek@72.com.mx
+</p>
+
+
+
+
+
+<br>
+
+
+
+
+
+<h3>
+Síguenos en nuestras redes sociales
+</h3>
+
+
+
+
+
+<div class="redes">
+
+
+
+
+
+<a href="https://www.facebook.com/profile.php?id=61592702852886&sk=about" target="_blank">
+
+🌐 Facebook
+
+</a>
+
+
+
+
+
+<a href="https://www.instagram.com/innovatek78/" target="_blank">
+
+📸 Instagram
+
+</a>
+
+
+
+
+
+<a href="https://www.tiktok.com/@innova.tek0" target="_blank">
+
+💼 TikTok
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+
+<footer>
+
+
+
+
+<h3>
+
+InnovaTek Soluciones Tecnológicas
+
+</h3>
+
+
+
+
+
+<p>
+
+Tecnología a la medida, soluciones que transforman.
+
+</p>
+
+
+
+
+
+<br>
+
+
+
+
+
+<p>
+
+© 2026 Todos los derechos reservados.
+
+</p>
+
+
+
+
+
+</footer>
+
+
+
+
+
+</body>
+
+
+</html>
