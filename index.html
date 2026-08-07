@@ -5,462 +5,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css">
 
 <title>InnovaTek Soluciones Tecnológicas</title>
 
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-    scroll-behavior:smooth;
-}
-
-
-body{
-
-    background:#f4f7fb;
-    color:#333;
-
-}
-
-
-
-/* ================= HEADER ================= */
-
-header{
-
-    background:#5792c5;
-    color:white;
-    text-align:center;
-    padding:20px;
-
-}
-
-
-header img{
-
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    background:white;
-    padding:10px;
-    margin-bottom:10px;
-
-}
-
-
-
-/* ================= MENU ================= */
-
-nav{
-
-    background:#06335d;
-    padding:15px;
-    position:sticky;
-    top:0;
-    z-index:1000;
-
-}
-
-
-nav ul{
-
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-
-}
-
-
-nav ul li{
-
-    margin:10px 20px;
-
-}
-
-
-nav ul li a{
-
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-
-}
-
-
-nav ul li a:hover{
-
-    color:#35d0ff;
-
-}
-
-
-
-/* ================= BANNER ================= */
-
-
-.banner{
-
-    background:
-    linear-gradient(
-        rgba(149,191,227,0.8),
-        rgba(6,51,93,0.8)
-    ),
-    url("img/banner.jpg") center/cover;
-
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-
-}
-
-
-.banner h2{
-
-    font-size:40px;
-    margin-bottom:15px;
-
-}
-
-
-.banner p{
-
-    font-size:20px;
-    max-width:800px;
-    margin:auto;
-
-}
-
-
-
-/* ================= SECCIONES ================= */
-
-
-section{
-
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
-
-}
-
-
-section h2{
-
-    color:#0b4f8a;
-    margin-bottom:20px;
-    text-align:center;
-    font-size:32px;
-
-}
-
-
-section p{
-
-    line-height:1.8;
-    text-align:justify;
-    margin-bottom:15px;
-
-}
-
-
-
-/* ================= CONTENIDO IMAGEN TEXTO ================= */
-
-
-.contenido{
-
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
-
-}
-
-
-
-.contenido img{
-
-    width:350px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-
-}
-
-
-
-.contenido div{
-
-    flex:1;
-    min-width:300px;
-
-}
-
-
-
-
-/* ================= CARDS ================= */
-
-
-.cards{
-
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-
-}
-
-
-
-.card{
-
-    background:white;
-    width:300px;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    text-align:center;
-
-}
-
-
-.card h3{
-
-    color:#1d4ed8;
-    margin-bottom:15px;
-
-}
-
-
-.card p{
-
-    text-align:center;
-
-}
-
-
-
-/* ==================================================
-                PORTAFOLIO NUEVO
-================================================== */
-
-
-.portafolio{
-
-    padding:60px 10%;
-    background:#f5f5f5;
-    text-align:center;
-
-}
-
-
-
-.portafolio h2{
-
-    font-size:35px;
-    color:#333;
-
-}
-
-
-
-.descripcion-portafolio{
-
-    max-width:800px;
-    margin:20px auto 40px;
-    color:#666;
-    font-size:18px;
-
-}
-
-
-
-.contenedor-proyectos{
-
-    display:flex;
-    justify-content:center;
-
-}
-
-
-
-.proyecto{
-
-    background:white;
-    width:380px;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-.proyecto img{
-
-    width:100%;
-    height:220px;
-    object-fit:cover;
-
-}
-
-
-
-.contenido-proyecto{
-
-    padding:25px;
-    text-align:left;
-
-}
-
-
-
-.contenido-proyecto h3{
-
-    color:#1d4ed8;
-    font-size:22px;
-
-}
-
-
-
-.contenido-proyecto h4{
-
-    margin-top:20px;
-    color:#333;
-
-}
-
-
-
-.contenido-proyecto p{
-
-    color:#555;
-    line-height:1.5;
-
-}
-
-
-
-.tecnologias span{
-
-    display:inline-block;
-    background:#e0e7ff;
-    color:#1e40af;
-
-    padding:7px 12px;
-    border-radius:20px;
-
-    margin:5px;
-    font-size:14px;
-
-}
-
-
-
-.contenido-proyecto ul{
-
-    padding-left:20px;
-    color:#555;
-
-}
-
-
-
-.datos-proyecto{
-
-    border-top:1px solid #ddd;
-    margin-top:20px;
-    padding-top:15px;
-
-}
-
-
-
-.btn-proyecto{
-
-    display:inline-block;
-
-    margin-top:15px;
-
-    background:#1d4ed8;
-    color:white;
-
-    padding:12px 25px;
-
-    border-radius:8px;
-
-    text-decoration:none;
-
-}
-
-
-
-.btn-proyecto:hover{
-
-    background:#163ea8;
-
-}
-
-
-
-/* ================= REDES ================= */
-
-
-.redes{
-
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-
-}
-
-
-
-.redes a{
-
-    background:#06335d;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
-
-}
-
-
-
-.redes a:hover{
-
-    background:#0b4f8a;
-
-}
-
-
-
-/* ================= FOOTER ================= */
-
-
-footer{
-
-    background:#06335d;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-
-}
-
-
-</style>
 
 </head>
 
@@ -472,7 +21,7 @@ footer{
 <header id="inicio">
 
 
-<img src="LOGO.jpeg" alt="Logo InnovaTek">
+<img src="LOGO.png" alt="Logo InnovaTek">
 
 
 <h1>
@@ -497,6 +46,9 @@ Tecnología a la medida, soluciones que transforman.
 <a href="#inicio">Inicio</a>
 </li>
 
+<li>
+<a href="#somos">¿Quiénes somos?</a>
+</li>
 
 <li>
 <a href="#mision">Misión</a>
@@ -507,6 +59,13 @@ Tecnología a la medida, soluciones que transforman.
 <a href="#vision">Visión</a>
 </li>
 
+<li>
+<a href="#objetivos">Objetivos</a>
+</li>
+
+<li>
+<a href="#servicios">Servicios</a>
+</li>
 
 <li>
 <a href="#portafolio">Portafolio</a>
@@ -550,7 +109,7 @@ competitivas e innovadoras.
 <section>
 
 
-<h2>
+<h2 id="somos">
 ¿Quiénes Somos?
 </h2>
 
@@ -591,6 +150,84 @@ y un servicio de calidad.
 
 
 </section>
+
+
+<!-- Contenedor que agrupa las 3 credenciales -->
+ <div class="contenedor_credenciales">
+    <div class="grid-container">
+
+        <!-- CREDENCIAL 1 CHRIS -->
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="avatar-container">
+                <img class="avatar" src="chris.jpeg" alt="Foto Chris">
+            </div>
+            <div class="card-body">
+                <h2 class="name">Chistopher Jared Villa Alanis</h2>
+                <hr class="divider">
+                <div class="info-group">
+                    <div>
+                        <div class="label">Cargo</div>
+                        <p class="value">Diseño y Soporte</p>
+                    </div>
+                    <div>
+                        <div class="label">Nivel de Estudios</div>
+                        <p class="value">TSU en Inteligencia Artificial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDENCIAL 2  LLUVIA -->
+        <div class="card">
+            <div class="card-header" style="filter: hue-rotate(50deg);"></div> <!-- Variación de color rápida -->
+            <div class="avatar-container">
+                <img class="avatar" src="lluvia.jpeg" alt="Foto Lluvia">
+            </div>
+            <div class="card-body">
+                <h2 class="name">Lluvia Daniela Escorcia Morales</h2>
+                <hr class="divider">
+                <div class="info-group">
+                    <div>
+                        <div class="label">Cargo</div>
+                        <p class="value">Líder de proyecto</p>
+                    </div>
+                    <div>
+                        <div class="label">Nivel de Estudios</div>
+                        <p class="value">TSU en Inteligencia Artificial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDENCIAL 3 BRI -->
+        <div class="card">
+            <div class="card-header" style="filter: hue-rotate(140deg);"></div> <!-- Variación de color rápida -->
+            <div class="avatar-container">
+                <img class="avatar" src="bri.jpeg" alt="Foto Bri">
+            </div>
+            <div class="card-body">
+                <h2 class="name">Briseyda Lopez Rodriguez</h2>
+                <hr class="divider">
+                <div class="info-group">
+                    <div>
+                        <div class="label">Cargo</div>
+                        <p class="value">Desarrolladora Front-End y pruebas</p>
+                    </div>
+                    <div>
+                        <div class="label">Nivel de Estudios</div>
+                        <p class="value">TSU en Inteligencia Artificial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
 <!-- ================= MISION ================= -->
 
 <section id="mision">
@@ -958,7 +595,7 @@ automatización de procesos y creación de soluciones digitales eficientes.
 
 
 
-<div class="contenedor-proyectos">
+<div class="contenedor-proyecto_seca">
 
 
 
@@ -982,20 +619,11 @@ alt="Sistema de Evaluación de Calificaciones Automatizado">
 
 <div class="contenido-proyecto">
 
-
-
-
-
 <h3>
 
 SECA - Sistema de Evaluación de Calificaciones Automatizado
 
 </h3>
-
-
-
-
-
 <p>
 
 Sistema desarrollado para automatizar la evaluación de 
@@ -1005,60 +633,33 @@ entrega de calificaciones.
 
 </p>
 
-
-
-
-
-
 <h4>
 Tecnologías utilizadas
 </h4>
 
-
-
-
-
-
 <div class="tecnologias">
-
 
 <span>
 Google Forms
 </span>
 
-
 <span>
 Google Sheets
 </span>
-
 
 <span>
 Google Apps Script
 </span>
 
-
 <span>
 Automatización
 </span>
 
-
-
 </div>
-
-
-
-
-
-
 
 <h4>
 Características principales
 </h4>
-
-
-
-
-
 
 <ul>
 
@@ -1082,15 +683,7 @@ Características principales
 ✔ Envío automático de resultados por correo
 </li>
 
-
-
 </ul>
-
-
-
-
-
-
 
 <div class="datos-proyecto">
 
@@ -1121,12 +714,136 @@ Características principales
 
 
 
+<a href="SECA.pdf" class="btn-proyecto" target="_blank">Documentación</a>
 
 
-<a href="SECA.pdf" class="btn-proyecto" target="_blank">
-  Ver proyecto
-</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdGwBUAXv-GHRmV6HoDo5s4rOlDy76QtUPc53sWhdp8exL4Vw/viewform?usp=sharing&ouid=108540460620602541788" class="btn-proyecto" target="_blank">Ver proyecto</a>
 
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="contenedor-proyecto_pagina">
+
+<!-- PROYECTO SECA -->
+
+<div class="proyecto">
+
+<img src="calif.jpeg"
+alt="Creación de Página Web Empresarial">
+
+<div class="contenido-proyecto">
+
+<h3>
+
+CPWE - Creación de Página Web Empresarial
+
+</h3>
+<p>
+
+Sitio web desarrollado bajo la modalidad One Page para la empresa InnovaTek Soluciones Tecnológicas.
+Su propósito principal es presentar la empresa, mostrar sus servicios y dar a conocer sus proyectos, 
+permitiendo que los usuarios naveguen entre secciones mediante un menú interactivo.
+
+</p>
+
+<h4>
+Tecnologías utilizadas
+</h4>
+
+<div class="tecnologias">
+
+<span>
+HTML
+</span>
+
+<span>
+CSS
+</span>
+
+<span>
+Google Sheets
+</span>
+
+<span>
+Google Apps Script
+</span>
+
+<span>
+Hosting
+</span>
+
+</div>
+
+<h4>
+Características principales
+</h4>
+
+<ul>
+
+
+<li>
+✔ Menú de navegación flotante con secciones
+</li>
+
+
+<li>
+✔ Distribución mediante tarjetas de información y diseño adaptado a identidad visual
+</li>
+
+
+<li>
+✔ Integración de sección especial de portafolio de proyectos
+</li>
+
+
+<li>
+✔ Publicación e implementación final en servidor hosting
+</li>
+
+</ul>
+
+
+<div class="datos-proyecto">
+
+<p>
+<b>Estado:</b> Finalizado
+</p>
+
+<p>
+<b>Metodología:</b> Cascada
+</p>
+
+<p>
+<b>Año:</b> 2026
+</p>
+
+</div>
+
+
+
+
+
+<a href="MODELO CASCADA PAGINA WEB.pdf" class="btn-proyecto" target="_blank">Documentación</a>
+
+
+<a href="https://lluvia88.github.io/INNOVATEK/" class="btn-proyecto" target="_blank">Ver proyecto</a>
 
 
 
@@ -1146,9 +863,6 @@ Características principales
 
 
 </div>
-
-
-
 
 
 
@@ -1196,32 +910,18 @@ Información de contacto
 
 
 <p>
-📧 Correo: innovatek@72.com.mx
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJVtLlNXjSdHDsPBKpqLwtVXtBZJwQcgxDdHPqHZlbjJnqnnBknlJkNJFCqZWBjvbwDpg">📧 Correo: innovatek72@gmail.com</a>
+
 </p>
 
 
-
-
-
 <br>
-
-
-
-
 
 <h3>
 Síguenos en nuestras redes sociales
 </h3>
 
-
-
-
-
 <div class="redes">
-
-
-
-
 
 <a href="https://www.facebook.com/profile.php?id=61592702852886&sk=about" target="_blank">
 
@@ -1229,31 +929,36 @@ Síguenos en nuestras redes sociales
 
 </a>
 
-
-
-
-
 <a href="https://www.instagram.com/innovatek78/" target="_blank">
 
 📸 Instagram
 
 </a>
 
-
-
-
-
 <a href="https://www.tiktok.com/@innova.tek0" target="_blank">
 
 💼 TikTok
 
 </a>
-
-
-
-
-
 </div>
+
+
+<br>
+
+<h3>
+Formulario de contacto
+</h3>
+
+<div class="redes">
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfQzbKOju0wt-jK_qpAbxcoLnYZMZhI3kuNhiVz6FClK22JeA/viewform?usp=header" target="_blank">
+
+🌐 Formulario
+
+</a>
+
+
+
 
 
 
